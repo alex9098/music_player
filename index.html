@@ -7,45 +7,12 @@
     <title>Music_Player</title>
 </head>
 <body>
-    
-    <div class="inputBox">
+     <div class="inputBox">
         <input type="text" placeholder="enter url here" class="searchBar">
+        <button class="searchBtn">Search</button>
     </div>
-    <div class="card">
-          <img src="nothing.jpg" width="200" alt="nothing">
-          <h3>Title</h3>
-          <div class="duration">
-              <label class="currentTime"> 00:00</label>
-              <input class="durationBar" type="range" id="" min="0" max="100">
-              <label class="duration"> 00:00</label>
-          </div>
-         
-          <div class="play-buttons">
-            <!-- previous button -->
-            <button class="pre" onclick={preMusic()}>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="black" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0">
-                    
-                </g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
-                    
-                </g><g id="SVGRepo_iconCarrier">
-                    <path d="M3.76172 7.21957V16.7896C3.76172 18.7496 5.89172 19.9796 7.59172 18.9996L11.7417 16.6096L15.8917 14.2096C17.5917 13.2296 17.5917 10.7796 15.8917 9.79957L11.7417 7.39957L7.59172 5.00957C5.89172 4.02957 3.76172 5.24957 3.76172 7.21957Z" ></path> <path d="M20.2383 18.9303C19.8283 18.9303 19.4883 18.5903 19.4883 18.1803V5.82031C19.4883 5.41031 19.8283 5.07031 20.2383 5.07031C20.6483 5.07031 20.9883 5.41031 20.9883 5.82031V18.1803C20.9883 18.5903 20.6583 18.9303 20.2383 18.9303Z" ></path> </g></svg>
-                </button>
-    
-            <!-- play button -->
-                    <button class="play" onclick={music()}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pause-circle-fill" viewBox="0 0 16 16">
-                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z"/>
-                          </svg>
-            </button>
-            <!-- next button -->
-            <button class="next" onclick={nextMusic()}>
-                <svg viewBox="0 0 24 24" fill="black" width="20" height="20"  \><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.76172 7.21957V16.7896C3.76172 18.7496 5.89172 19.9796 7.59172 18.9996L11.7417 16.6096L15.8917 14.2096C17.5917 13.2296 17.5917 10.7796 15.8917 9.79957L11.7417 7.39957L7.59172 5.00957C5.89172 4.02957 3.76172 5.24957 3.76172 7.21957Z" ></path> <path d="M20.2383 18.9303C19.8283 18.9303 19.4883 18.5903 19.4883 18.1803V5.82031C19.4883 5.41031 19.8283 5.07031 20.2383 5.07031C20.6483 5.07031 20.9883 5.41031 20.9883 5.82031V18.1803C20.9883 18.5903 20.6583 18.9303 20.2383 18.9303Z" ></path> </g></svg>
-
-            </button>
-       
-          </div>
-
-    </div>
+   <audio controls autoplay>
+   </audio>
  
 </body>
 <script src="script.js"></script>
